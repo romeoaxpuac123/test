@@ -8,7 +8,7 @@ pipeline {
         }
 		stage('existen complementos') {
             steps {
-                sh 'bash -c ls node_modules_error'
+                sh 'bash -c ls /node_modules_error'
             }
         }
 		stage('Correr App') {
