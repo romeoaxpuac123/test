@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Verificar Repositorio') {
+        stage('checkout-git') {
             steps {
-                git poll: true,url: 'https://github.com/romeoaxpuac123/test.git'
+                bash -c "ls node_modules"
             }
         }
     }
