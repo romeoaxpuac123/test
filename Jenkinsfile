@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout-git') {
             steps {
-                bash -c "ls node_modules"
+                bash -c ls node_modules
             }
         }
     }
