@@ -9,7 +9,7 @@ pipeline {
 		stage('existen complementos') {
             steps {
                 sh '''
-					bash -c "ls /node_modules"
+					bash -c ls node_modules
 					
 				'''
             }
