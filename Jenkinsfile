@@ -8,7 +8,7 @@ pipeline {
         }
 		stage('checkout-git2') {
             steps {
-                sh 'npm --version'
+                sh 'bash -c ls node_modules'
             }
         }
 		stage('Correr App') {
