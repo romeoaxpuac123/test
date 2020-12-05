@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
 const port = 3000
+var path = require('path');
 
 app.get('/', (req, res) => {
-  res.send('Hello World danilo null!')
+  res.sendFile(path.join(__dirname + '/index.html'));
 })
 
 app.listen(port, () => {
