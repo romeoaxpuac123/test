@@ -6,7 +6,7 @@ pipeline {
                 sh 'npm --version'
             }
         }
-		stage('checkout-git') {
+		stage('checkout-git2') {
             steps {
                 sh 'npm --version'
             }
