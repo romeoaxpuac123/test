@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('checkout-git') {
+        stage('npm instalado') {
             steps {
                 sh 'npm --version'
             }
         }
-		stage('checkout-git2') {
+		stage('existen complementos') {
             steps {
                 sh 'bash -c ls node_modules'
             }
