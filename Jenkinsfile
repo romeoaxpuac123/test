@@ -2,16 +2,6 @@ pipeline {
     agent any
     stages {
 
-        stage('npm instalado') {
-            steps {
-                sh 'sudo su'
-            }
-        }
-		stage('iniciar') {
-            steps {
-                sh 'npm init'
-            }
-        }
 		stage('realizar pruebas') {
             steps {
                 sh 'npm test'
