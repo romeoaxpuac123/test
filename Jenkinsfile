@@ -7,7 +7,17 @@ pipeline {
                 sh 'npm --version'
             }
         }
-		stage('existen complementos') {
+		stage('iniciar') {
+            steps {
+                sh 'npm init'
+            }
+        }
+		stage('realizar pruebas') {
+            steps {
+                sh 'npm test'
+            }
+        }
+		stage('iniciar cosas') {
             steps {
                 sh '''
 					bash -c ls node_modules
