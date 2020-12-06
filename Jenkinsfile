@@ -7,7 +7,7 @@ pipeline {
                 sh 'npm test'
             }
         }
-		stage('iniciar cosas') {
+		stage('mostrar repo') {
             steps {
                 sh '''
 					bash -c ls node_modules

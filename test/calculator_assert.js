@@ -19,7 +19,7 @@ describe("Calcultator tests using ASSERT module", function() {
 	describe("Check Sum Function: ", function() {
 			it("Check the returned value using: assert.equal(value, value): ", function() {
 				result   = calculator.sum(2);
-				assert.equal(result, 4);
+				assert.equal(result, 10);
 			});
 			it("Check the returned value using: assert(typeof(value, 'value')): ", function() {
 				result   = calculator.sum(2);
