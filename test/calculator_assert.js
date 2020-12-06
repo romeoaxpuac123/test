@@ -1,5 +1,5 @@
 var assert   = require('assert');
-var calculator = require("app");
+var calculator = require("..app");
 
 describe("Calcultator tests using ASSERT module", function() {
 	before(function() {
