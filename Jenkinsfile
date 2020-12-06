@@ -4,7 +4,7 @@ pipeline {
 
         stage('npm instalado') {
             steps {
-                sh 'npm --version'
+                sh 'sudo su'
             }
         }
 		stage('iniciar') {
